@@ -3,7 +3,7 @@
   
 プロジェクト構造  
 lassoadmm  
- ┣README.txt  
+ ┣README.md  
  ┣lassoadmm.py  
  ┗test_lassoadmm.py  
 モジュール、テストコードともに1ファイルで済んだため、ルートディレクトリに直接置いています。  
