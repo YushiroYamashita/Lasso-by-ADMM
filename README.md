@@ -1,4 +1,4 @@
-# Lasso-by-ADMM
+# lassoadmm
 このプログラムはPython3.7でテストされています。  
   
 プロジェクト構造  
