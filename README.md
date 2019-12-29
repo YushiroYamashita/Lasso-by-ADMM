@@ -9,7 +9,7 @@ lassoadmm
 モジュール、テストコードともに1ファイルで済んだため、ルートディレクトリに直接置いています。  
   
 プログラムの実行方法  
-lassoadmm内で  
+ルートディレクトリで  
 $python test_lassoadmm.py  
 を実行すると、自作したLasso回帰モジュールを使ったサンプルプログラムが実行できます。  
 他のコードでモジュールを利用する場合、scikit-learnのlinear_model.Lassoと同じように使える予定です。  
