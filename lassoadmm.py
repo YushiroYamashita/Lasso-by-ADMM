@@ -13,14 +13,10 @@ class Admm(BaseEstimator, RegressorMixin):  #ADMMを用いたLassoのクラス
     def _soft_threshold(self, x):   #軟閾値関数
         t = self.threshold
 
-        positive_indexes = x >= t
-        negative_indexes = x <= t
-        zero_indexes = abs(x) <= t
+        nonzero_indexes = abs(x) >= t
 
         y = np.zeros(x.shape)
-        y[positive_indexes] = x[positive_indexes] - t
-        y[negative_indexes] = x[negative_indexes] + t
-        y[zero_indexes] = 0.0
+        y[nonzero_indexes] = x[nonzero_indexes] - np.sign(x[nonzero_indexes])*t
 
         return y
 
